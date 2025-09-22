@@ -1,0 +1,42 @@
+package javaPack;
+
+public class Person 
+{
+	private String firstname;
+	private String lastname;
+	private int userbirthyr;
+	
+	public  Person(String fname, String lname, int userdob)
+	{
+		this.firstname = fname;
+		this.lastname = lname;
+		this.userbirthyr = userdob;
+	}
+	
+	public String Fullname()
+	{
+		String completename = firstname + " " + lastname;
+		return completename;
+	}
+	
+	public String FullnameUpper()
+	{
+		String upperfullname = Fullname().toUpperCase();
+		return upperfullname;
+	}
+	
+	public int Fullnamelength()
+	{
+		int fullnamelen = Fullname().length();
+		return fullnamelen;
+	}
+	
+	public int PersonAge()
+	{
+		int ageofperson;
+		ageofperson = 2025 - userbirthyr;
+		return ageofperson;
+		
+	}
+
+}
